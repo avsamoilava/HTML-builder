@@ -14,6 +14,6 @@ const dirPath = path.join(__dirname, 'secret-folder');
     let name = file.name.split(`${extension}`).join('');
     stat(path.join(dirPath, file.name), (err, stats) => {
       console.log(`${name} - ${extension.slice(1)} - ${stats.size*0.000977}kb`)
-    });;
+    });
   }
 })();
